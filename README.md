@@ -4,9 +4,10 @@ This simple demo shows how to use platformio and renode to develop a simple **ze
 
 The target is the [Freedom-K64F by NXP](https://www.nxp.com/design/development-boards/freedom-development-boards/mcu-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F)
 
-Two environments are created
- - One for renode
- - One for the real hardware
+3 environments are created:
+ - One for renode upload
+ - One for renode debug
+ - One for the real hardware upload and debug
 
 For the renode env, you need to create a simple **k64f.resc** script, as renode does not provide a script for this platform.
 
