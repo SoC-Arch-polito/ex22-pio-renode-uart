@@ -2,12 +2,19 @@
 
 This simple demo shows how to use platformio and renode to develop a simple **zephyr** application.
 
-The target is the [Freedom-K64F by NXP](https://www.nxp.com/design/development-boards/freedom-development-boards/mcu-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F)
+The targets are the
+ - [Freedom-K64F by NXP](https://zephyr-dashboard.renode.io/renodepedia/boards/frdm_k64f/?view=software&demo=Hello_World)
+ - [nucleo F410RB](https://zephyr-dashboard.renode.io/renodepedia/boards/nucleo_f410rb)
 
-3 environments are created:
- - One for renode upload
- - One for renode debug
- - One for the real hardware upload and debug
+
+4 environments are created:
+ - One for renode upload with the **K64F**
+ - One for renode debug with the **K64F**
+ - One for the real hardware upload and debug with the **K64F**
+ - One for renode upload with the **nucleo_f410rb**
+
+
+## K64F and renode
 
 For the renode env, you need to create a simple **k64f.resc** script, as renode does not provide a script for this platform.
 
